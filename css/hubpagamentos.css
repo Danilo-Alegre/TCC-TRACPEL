@@ -1,0 +1,124 @@
+@import url('https://fonts;googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: #fdeb92;*/
+}
+
+.container form {
+    width: 700px;
+    padding: 40px;
+    background: #fffebb;
+    border-radius: 10px;
+}
+
+form .row {
+    display: flex;
+    gap: 15px;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.flex .select{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.input-box img {
+    height: 34px;
+    margin-top: 1.6px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background:#ffeb89;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+form .btn:hover {
+    background: yellow;
+}
+.logo{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+body{
+    background-image: url(../img/fundoPagamento.jpg);
+    background-size: cover;
+}
+
+.nomecartao{
+    margin-top: 24px;
+}
+
+.cartaocredito{
+    margin-top: 19px;
+}
+
+.cep{
+    margin-top: -11px;
+}
+
+.mesvalidade{
+    margin-top: -15px;
+}

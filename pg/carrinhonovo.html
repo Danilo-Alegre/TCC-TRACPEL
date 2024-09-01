@@ -1,0 +1,102 @@
+<?php
+require_once "conexao.php";
+$conexao = novaConexao();
+
+$stmt = $conexao->prepare($sql);
+ $stmt->execute();
+?>
+
+
+
+
+
+ 
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8">
+<link rel="stylesheet" href="../css/carrinhonovo.css">
+</head>
+<body>
+
+    <!--Div pai (container)-->
+
+<div class="header">
+    <img src="../img/logoTracpel.png" class="logo">
+      <h1>CARRINHO</h1>
+</div>
+
+<div class="container">
+  <div class="cart">
+    <div class="item"> 
+      <input type="checkbox" checked>
+      <img src="../img/imagem3.jpg" class="item-image">
+      
+      <div class="item-info">
+      <div class="item-title">Parafusos</div>
+      <div class="item-description">Descrição descrição descrição descrição descrição......</div>
+      <div class="item-price">R$ 350,00</div>
+      <div class="item-quantity">
+        <button class="item-quantity-button">-</button>
+        <span>1</span>
+        <button class="item-quantity-button">+</button>
+      </div>
+</div>
+
+      
+    </div>
+
+    <div class="item">
+      <input type="checkbox">
+      <img src="para1.jpg" class="item-image">
+
+      <div class="item-info">
+        <div class="item-title">Parafusos</div>
+        <div class="item-description">Descrição descrição descrição descrição descrição......</div>
+        <div class="item-price">R$ 350,00</div>
+        <button class="item-quantity-button">-</button>
+        <span>1</span>
+        <button class="item-quantity-button">+</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <input type="checkbox">
+      <img src="para1.jpg" class="item-image">
+
+      <div class="item-info">
+        <div class="item-title">Parafusos</div>
+        <div class="item-description">Descrição descrição descrição descrição descrição......</div>
+        <div class="item-price">R$ 350,00</div>
+        <button class="item-quantity-button">-</button>
+        <span>1</span>
+        <button class="item-quantity-button">+</button>
+      </div>
+      
+      </div>
+
+      <div class="item">
+        <input type="checkbox">
+        <img src="para1.jpg" class="item-image">
+  
+        <div class="item-info">
+          <div class="item-title">Parafusos</div>
+          <div class="item-description">Descrição descrição descrição descrição descrição......</div>
+          <div class="item-price">R$ 350,00</div>
+          <button class="item-quantity-button">-</button>
+          <span>1</span>
+          <button class="item-quantity-button">+</button>
+        </div>
+        
+        </div>
+  </div>
+
+  <div class="summary ">
+    <div class="summary-title">Total</div>
+    <div class="summary-total">R$ 350,00</div>
+    <button class="button">Comprar (1)</button>
+  </div>
+</div>
+<!--Fim da div pai-->
+
+</body>
+</html> 

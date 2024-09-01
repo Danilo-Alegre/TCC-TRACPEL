@@ -1,0 +1,117 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../img/Fundo\ Login\ teste\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textField{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.textField > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    opacity: 0.4;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.textField > label{
+    color:#f0ffffde;
+    margin-bottom: 10px;
+}
+.textField > input::placeholder{
+    color: black;
+}
+
+
+.card-cad{ 
+
+    width: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    backdrop-filter: blur(5px);
+    border: solid #dec430;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+    
+}
+
+
+.card-cad > h1{
+    color: #dec430;
+    font-weight: 800;
+    margin:0;
+    }
+
+    button{
+        width: 50%;
+        padding: 16px 0px;
+        margin: 25px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: black;
+        background-color: #dec430;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px #00ff8052;
+    }
+    @keyframes animacao{
+        0%{
+            transform: scale(1);
+        }
+    
+        100%{
+            transform: scale(1.02);
+        }
+    }
+    button:hover{
+        animation-name: animacao;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+
+    @media screen and (max-width: 730px) {
+
+        .card-cad{
+            width: 27rem;
+        }
+
+    }

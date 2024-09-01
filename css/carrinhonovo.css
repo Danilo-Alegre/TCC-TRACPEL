@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+  justify-content: center;
+}
+
+.cart {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  margin: 20px;
+  border: 1px solid orange;  
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  gap: 10px;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.item-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.item-price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.item-quantity {
+  display: flex;
+  gap: 5px;
+}
+
+.item-quantity-button {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-remove {
+  cursor: pointer;
+}
+
+.summary {
+  width: 30rem;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-top: 20px;
+  justify-content: space-between; 
+}
+
+.summary-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.summary-total {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: peru;
+  color: white;
+}

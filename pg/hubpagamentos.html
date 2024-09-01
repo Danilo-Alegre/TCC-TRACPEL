@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="../css/hubpagamentos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+   
+    <div class="container">
+        <form action="">
+            <div class="row">
+               
+                <a href="#" class="logo mb-4">
+                    <img src="../img/logoTracpel.png" class="" alt="logo">
+                </a>
+                
+                <div class="column">
+                    <h3 class="title">Informações</h3>
+                    <div class="input-box">
+                        <span>Nome completo: </span>
+                        <input type="text" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="input-box">
+                        <span>E-mail: </span>
+                        <input type="text" placeholder="exemplo@gmail.com">
+                    </div>
+                
+                <div class="flex">
+                        
+                    <div class="input-box">
+                        <span>Endereço: </span>
+                        <input type="text" placeholder="Rua - Bairro">
+                    </div>
+
+                    <div class="input-box">
+                        <span>Cidade: </span>
+                        <input type="select" placeholder="Ex: Guaratinguetá">
+                    </div>
+                    
+                </div>
+
+                    <div class="input-box">
+                        <div class="input-box">
+                            <div class="cep">
+                            <span>CEP: </span>
+                            </div>
+                            <input type="text" id="cep" placeholder="99888-777">
+                        </div>
+                        <div class="select">
+                            <span>Estado: </span>                         
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="Acre">Acre</option>
+                                <option value="Alagoas">Alagoas</option>
+                                <option value="Amapá">Amapá</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Bahia">Bahia</option>
+                                <option value="Distrito Federal">Distrito Federal</option>
+                                <option value="Espírito Santo">Espírito Santo</option>
+                                <option value="Goiás">Goiás</option>
+                                <option value="Maranhão">Maranhão</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                <option value="Minas Gerais">Minas Gerais</option>
+                                <option value="Pará">Pará</option>
+                                <option value="Paraíba">Paraíba</option>
+                                <option value="Paraná">Paraná</option>
+                                <option value="Pernambuco">Pernambuco</option>
+                                <option value="Piauí">Piauí</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                <option value="Rondônia">Rondônia</option>
+                                <option value="Roraima">Roraima</option>
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Sergipe">Sergipe</option>
+                                <option value="Tocantins">Tocantins</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+                            
+                
+                            <!---Pagamento-->
+                
+            <div class="column">
+                    <h3 class="title">Pagamento</h3>
+                    <div class="input-box">
+                        <span>Cartões Aceitos: </span>
+                        <img src="../img/imgcards.png" alt="">
+                    </div>
+
+                    <div class="nomecartao">
+                    <div class="input-box">
+                        <span>Nome no Cartão: </span>
+                        <input type="text" placeholder="Kauã G B Santos">
+                    </div>
+                    </div>
+
+                    <div class="cartaocredito">
+                    <div class="input-box">
+                        <span>Número do Cartão de Crédito: </span>
+                        <input type="text" id="cartao" placeholder="1111 2222 3333 4444">
+                    </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Ano de Validade: </span>
+                            <input type="text" id="anoValidade" placeholder="2027">
+                        </div>
+
+                    <div class="input-box">
+                        <span>CVV: </span>
+                        <input type="text" id="cvv" placeholder="354">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="select">
+                        <div class="mesvalidade">
+                        <span>Mes de validade </span>  
+                        </div>                       
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="01">Janeiro</option>
+	                        <option value="02">Fevereiro</option>
+	                        <option value="03">Março</option>
+	                        <option value="04">Abril</option>
+	                        <option value="05">Maio</option>
+	                        <option value="06">Junho</option>
+	                        <option value="07">Julho</option>
+	                        <option value="08">Agosto</option>
+	                        <option value="09">Setembro</option>
+	                        <option value="10">Outubro</option>
+	                        <option value="11">Novembro</option>
+	                        <option value="12">Dezembro</option>
+                            
+                          </select>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <button type="submit" class="btn">Enviar</button>
+    </form>
+    </div>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script>
+            $('#cpf').mask('000.000.000-00', { reverse: true });
+            $('#cep').mask('00000-000');
+            $('#cvv').mask('000');
+            $('#cartao').mask('0000 0000 0000 0000');
+            $('#anoValidade').mask('0000');
+        </script>
+
+</body>
+
+</html>

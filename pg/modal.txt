@@ -1,0 +1,115 @@
+onclick="abrirModal()
+
+
+
+
+        <div class="cont-modal">
+            <div class="mymodal">
+                <h3>Cadastro concluido</h3>
+                 <div class="btns">
+                    <button id="voltar" onclick="fecharModal()">Voltar</button>
+                    <button id="login">Fazer Login</button>
+                    </div>
+    
+                </div>
+    
+        </div>
+
+
+
+
+
+
+
+  <script>
+                const card = document.querySelector('.conteudo')
+                const modal = document.querySelector('.cont-modal')
+
+                function abrirModal(){
+                    modal.classList.add('ativa')
+                    card.classList.add('desativa')
+                }
+        
+                function fecharModal(){
+                    modal.classList.remove('ativa')
+                    card.classList.remove('desativa')
+                }
+                 </script>
+
+
+
+
+
+
+
+
+
+
+                 .cont-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+}
+
+.mymodal{
+    width: 35rem;
+    padding: 40px;
+    color: white;
+    backdrop-filter: blur(5px);
+    border: solid #dec430;
+    border-radius: 20px;
+    text-align: center;   
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btns button{
+    width: 10rem;
+    color: white;
+}
+
+.disabled{
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#voltar{
+    background-color: red;
+}
+
+#login{
+    background-color: green;
+}
+
+.ativa{
+    display: flex;
+}
+
+.desativa{
+    display: none;
+}
+
+.ativa .mymodal{
+    animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+    0%{
+        transform:translateY(-100px);
+        transition: 1s;
+    }
+    100%{
+        transform:translateY(0px);
+        transition: 1s;
+    }
+}
